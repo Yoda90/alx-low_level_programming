@@ -10,7 +10,7 @@
 int _abs(int n)
 
 {
-	if (abs(n))
+	if  (abs(n))
 		printf("%d\n", n);
 
 	return (0);
