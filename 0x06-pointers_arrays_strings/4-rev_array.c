@@ -11,15 +11,15 @@ void reverse_array(int *a, int n)
 
 {
 	int f;
-	char temp;
+	
 	int l;
 
-	f = 0;
+	f = (0);
 	l = (n - 1);
 
 	while (a[f] < a[l])
 	{
-		 temp = a[f];
+		int temp = a[f];
 
 		a[f] = a[l];
 
