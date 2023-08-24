@@ -4,26 +4,29 @@
 /**
 *reverse_array - function that reverses the content of an array of integers.
 *@n : hold integer values
-*@a: is a pointer
+*@a: is a pointer holding integer values
 *Return:
 */
 void reverse_array(int *a, int n)
 
 {
-	int left = 0;
+	int f;
 
-	int right = n - 1;
+	int l;
 
-	while (a[left] < a[right])
+	f = (0);
+	l = (n - 1);
+
+	while (a[f] < a[l])
 	{
-		int temp = a[left];
+		int temp = a[f];
 
-		a[left] = a[right];
+		a[f] = a[l];
 
-		a[right] =  temp;
+		a[l] =  temp;
 
 
-		left++;
-		right--;
+		f++;
+		l--;
 	}
 }
