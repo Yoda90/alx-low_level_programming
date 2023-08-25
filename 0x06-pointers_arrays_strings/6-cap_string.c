@@ -2,42 +2,46 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- *cap_string - function that capitalizes all words of a string.
- *@ptr: is a strings.
- *
- *Return: ptr
- */
-int is_separator(char c)
+*is_separator - specify if t string is  as a separator.
+*@s: is a strings.
+*
+*Return: 0, 1
+*/
+char is_separator(char s)
 {
-	int i;
+	char separators[] = " \t\n,;.!?\"(){}";
+	int j;
 
-    char separators[] = " \t\n,;.!?\"(){}";
-    for ( i = 0; separators[i] != '\0'; ++i) {
-        if (c == separators[i]) {
-            return 1;
-        }
-    }
-    return 0;
+	for (j = 0; separators[j] != '\0'; ++j)
+	{
+		if (s == separators[j])
+		{
+			return (1);
+		}
+	}
+	return (0);
 }
-
+/**
+*cap_string - capitalizes all words of a string
+*@ptr: holds the string
+*is_separator -specified if string is a seperator.
+*Return: ptr
+*/
 char *cap_string(char *ptr)
 {
-        size_t i;
+	size_t j;
 
-        for (i = 0; i < strlen(ptr); i++)
-        {
-                if (is_separator(ptr[i - 1]) || i == 0)
-                {
-                        if (islower(ptr[i]))
-                        {
-                                ptr[i] = toupper(ptr[i]);
-                        }
-                }
-                else if (isupper(ptr[i]))
-                {
-                        ptr[i] = tolower(ptr[i]);
-                }
-        }
+	for (j = 0; j < strlen(ptr); j++)
+	{
+		if (is_separator(ptr[j - 1]) || j == 0)
+		{
+			if (islower(ptr[j]))
+			{
+				ptr[j] = toupper(ptr[j]);
+			}
+		}
 
-        return (ptr);
+	}
+
+	return (ptr);
 }
