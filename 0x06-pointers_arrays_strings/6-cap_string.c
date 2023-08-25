@@ -12,7 +12,7 @@ char *cap_string(char *ptr)
 {
 	size_t i;
 
-	for (i = 0; i < strlen(ptr); i++)
+	for (i = 1; i < strlen(ptr); i++)
 	{
 
 		if (isspace(ptr[i - 1]) || ispunct(ptr[i - 1]) || isblank(ptr[i - 1]))
