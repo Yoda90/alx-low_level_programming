@@ -4,7 +4,7 @@
 /**
  *_strspn - a function that gets the length of a prefix substring.
  *@s: is a string
- *@ccept: is string containing characters to me matched.
+ *@accept: is string containing characters to me matched in s.
  *
  *Return: the number of characters in the initial segment s.
  */
