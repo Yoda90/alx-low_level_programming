@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- *_memset - a function that fills memory with a constant byte.
+ *_memcpy - a function that copies memory area.
  *@dest: is a pointer destination
  *@src: is a pointer to a  source data.
  *@n: number of bytes.
