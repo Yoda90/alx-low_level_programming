@@ -6,7 +6,7 @@
  *@s: is a string
  *@ccept: is string containing characters to me matched.
  *
- *Return: Returns a pointer to the memory area s
+ *Return: the number of characters in the initial segment s.
  */
 unsigned int _strspn(char *s, char *accept)
 {
