@@ -6,7 +6,7 @@
  *@dest: is a pointer destination
  *@src: is a pointer to a  source data.
  *@n: number of bytes.
- *Return: Returns: dest
+ *Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
