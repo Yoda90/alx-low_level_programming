@@ -2,27 +2,29 @@
 #include <string.h>
 
 /**
- *_strspn - a function that gets the length of a prefix substring.
- *@s: is a string
- *@accept: is string containing characters to me matched in s.
+ *print_diagsums - a function that prints the sum of the two diagonals.
+ *@a: is a pointer pointing to an int.
+ *@size: size of the array
  *
- *Return: the number of characters in the initial segment s.
+ *Return
  */
 void print_diagsums(int *a, int size)
 {
-	int Diagonal1 = 0;
-    int Diagonal2 = 0;
-	int i = 0;
-    
-    for (i = 0; i < size - 1; i++) {
-        
-        Diagonal1 += a[i * size + i];
+	int i, sum1 = 0, sum2 = 0;
 
-        
-        Diagonal2 += a[i * size + (size - 1 - i)];
-    }
-    printf("Diagonal1: %d\n", Diagonal1);
-    printf("Diagonal2: %d\n", Diagonal2);
+	for (i = 0; i < size; i++)
+	{
+		sum1 += a[i];
 
+		a += size;
+	}
+	a -= size;
+
+	for (i = 0; i < size; i++)
+	{
+		sum2 += a[i];
+		a -= size;
+	}
+
+	printf("%d, %d\n", sum1, sum2);
 }
-
