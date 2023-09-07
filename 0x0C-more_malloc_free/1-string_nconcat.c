@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <limits.h>
+#include <stdio.h>
 /**
  *_strlen - calculate length of a string.
  *@s : holds length of a string.
@@ -31,10 +32,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		int len1 = _strlen(s1);
 
+		if (s1 == NULL && s2 == NULL)
+			return (NULL);
+
 		if (s1 == NULL)
 			s1 = "";
 		if (s2 == NULL)
 			s2 = "";
+
 
 		s3 = malloc(sizeof(char) * (len1 + n + 1));
 		if (s3 == NULL)
