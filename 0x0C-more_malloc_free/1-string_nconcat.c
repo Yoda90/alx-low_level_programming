@@ -5,7 +5,7 @@
  *_strlen - calculate length of a string.
  *@s : holds length of a string.
  *
- *Return: 16
+ *Return: length
  */
 int _strlen(char *s)
 {
@@ -22,11 +22,12 @@ int _strlen(char *s)
  *@s1: its a string
  *@s2: its a string
  *@n: is positive integers
- *Return: (s3 - (len1 + yoda))
+ *Return: s3
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {		char *s3;
-		unsigned int yoda = n;
+
+		unsigned int i = 0, j = 0;
 
 		int len1 = _strlen(s1);
 
@@ -40,21 +41,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			return (NULL);
 
 
-		while (*s1)
+		for (i = 0; s1[i]; i++)
 		{
-			*s3 = *s1;
-			s3++;
-			s1++;
-		}
-		while (*s2 && n > 0)
-		{
-			*s3 = *s2;
-			s3++;
-			s2++;
-			n--;
+			s3[j++] = s1[i];
 
 		}
-		*s3 = '\0';
-		return (s3 - (len1 + yoda));
+		for (i = 0; s2[i] && i < n; i++)
+		{
+			s3[j++] = s2[i];
+
+
+		}
+		s3[j] = '\0';
+		return (s3);
 
 }
