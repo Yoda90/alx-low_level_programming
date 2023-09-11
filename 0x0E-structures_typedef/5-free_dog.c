@@ -4,7 +4,7 @@
 
 /**
  *free_dog - free dogs
- * @d: struct dog to print
+ * @d: struct dog to free
  */
 void free_dog(struct dog *d)
 {
