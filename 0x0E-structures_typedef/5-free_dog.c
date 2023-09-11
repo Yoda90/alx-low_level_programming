@@ -3,8 +3,8 @@
 #include "dog.h"
 
 /**
- *free_dog - free dogs
- * @d: struct dog to free
+ *free_dog - a function that free dogs
+ * @d: a pointer pointing to struct dog.
  */
 void free_dog(struct dog *d)
 {
