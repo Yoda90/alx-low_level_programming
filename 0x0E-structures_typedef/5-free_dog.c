@@ -15,6 +15,5 @@ void free_dog(struct dog *d)
 	{
 		free(d);
 
-		return;
 	}
 }
