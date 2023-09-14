@@ -1,14 +1,15 @@
 #include "3-calc.h"
+
 /**
  * main - program that perfroms simple operations
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0
+ * Return: Always 0 (Sucess)
  */
 int main(int argc, char *argv[])
 {
-	int arg, arg1, result;
+	int arg1, arg2, result;
 	char c;
 	int (*functn)(int, int);
 
@@ -18,8 +19,8 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	arg = atoi(argv[1]);
-	arg1 = atoi(argv[3]);
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[3]);
 
 	functn = get_op_func(argv[2]);
 
@@ -37,7 +38,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	result = functn(arg, arg1);
+	result = functn(arg1, arg2);
 
 	printf("%d\n", result);
 

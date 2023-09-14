@@ -1,10 +1,8 @@
 #include "calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * get_op_func - function pointer
- * @s: An operator
+ * @s: An operator from the user
  * Return: a pointer to the function
  */
 int (*get_op_func(char *s))(int, int)
