@@ -9,8 +9,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list allnumb;
-	int i = 0;
-	char *s = 0;
+	unsigned int i = 0;
+	char *s;
 	char *separator;
 
 	va_start(allnumb, format);
