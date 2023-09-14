@@ -2,7 +2,7 @@
 
 /**
  * get_op_func - function pointer
- * @s: An operator 
+ * @s: An operator
  * Return: a pointer to the function
  */
 
