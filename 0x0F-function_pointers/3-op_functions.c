@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * op_add - calculate the sum of numbers
@@ -6,7 +6,7 @@
  * @b: an integer
  * Return: sum of a and b
  */
-int op_add(int a, int b);
+int op_add(int a, int b)
 {
 	return (a + b);
 }
@@ -56,7 +56,7 @@ int op_div(int a, int b)
  * @b: an integer
  * Return: remainder when a is divided by b
  */
-int op_mod(int a, int b);
+int op_mod(int a, int b)
 {
 	return (a % b);
 }
