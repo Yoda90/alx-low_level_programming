@@ -18,7 +18,6 @@ int op_add(int a, int b)
  * Return: difference in a and b
  */
 
-
 int op_sub(int a, int b)
 {
 	return (a - b);
@@ -30,7 +29,6 @@ int op_sub(int a, int b)
  * @b: an integer
  * Return: product of and and b
  */
-
 
 int op_mul(int a, int b)
 {

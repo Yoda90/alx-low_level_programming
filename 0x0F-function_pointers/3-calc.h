@@ -11,8 +11,8 @@
  * @op: The operator
  * @f: The function pointer
  */
-typedef struct op
 
+typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
