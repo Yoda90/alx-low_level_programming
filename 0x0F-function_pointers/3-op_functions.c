@@ -52,7 +52,7 @@ int op_div(int a, int b)
  * op_mul - multiply numbers
  * @a: an integer
  * @b: an integer
- * Return: remainder when a is divided by b
+ * Return: remainder when a and  b is divided
  */
 int op_mod(int a, int b)
 {

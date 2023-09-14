@@ -2,7 +2,7 @@
 
 /**
  * get_op_func - function pointer
- * @s: An operator from the user
+ * @s: An operator 
  * Return: a pointer to the function
  */
 
@@ -17,7 +17,9 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 
-	int i = 0;
+	int i;
+
+	i = 0;
 
 	while (ops[i].op)
 	{
