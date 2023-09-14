@@ -1,4 +1,6 @@
 #include "calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * op_add - calculate the sum of numbers
  * @a: an integer
