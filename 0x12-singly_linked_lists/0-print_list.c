@@ -2,16 +2,16 @@
 
 /**
  * print_list - function that prints all the elements of a list_t list.
- * @h: pointer to a typedef struct list_t
+ * @h: single linked list.
  *
  *
- * Return: count
+ * Return: number of count.
  */
 size_t print_list(const list_t *h)
 {
-	size_t  count;
+	size_t  number_count;
 
-	count = 0;
+	number_count = 0;
 
 	while (h != NULL)
 	{
@@ -31,6 +31,7 @@ size_t print_list(const list_t *h)
 		count++;
 	}
 
-	return (count);
+	return (number_count);
 
 }
+
