@@ -9,14 +9,14 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int uint, place;
+	unsigned int uint;
+	unsigned int place;
 	int y;
 
 	if (!b)
 		return (0);
 
 	for (y = 0; b[y]; y++)
-		;
 	y--;
 	for (place = 1, uint = 0; y >= 0; y--)
 	{
