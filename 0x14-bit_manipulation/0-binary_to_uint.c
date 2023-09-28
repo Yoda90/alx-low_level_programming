@@ -5,7 +5,7 @@
  * a binary number to an unsigned int.
  * @b: pointer to a string containing a binary number
  *
- * Return: unit and  0 if it fails
+ * Return: unit
  */
 unsigned int binary_to_uint(const char *b)
 {
